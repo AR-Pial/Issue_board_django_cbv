@@ -1,0 +1,81 @@
+# -------------------------------
+# Python / Django
+# -------------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3  # If you use SQLite for dev
+media/
+staticfiles/
+.env
+.env.*  # Environment files
+
+# PostgreSQL backup files
+*.sql
+*.dump
+
+# VSCode / IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Mac / Linux / Windows system files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Node / frontend (if any)
+node_modules/
+dist/
