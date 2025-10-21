@@ -1,0 +1,82 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Dashboard - IssueBoard{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="mb-4">Dashboard</h1>
+
+    <div class="row g-4">
+
+        <!-- Example Card 1: Total Projects -->
+        <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Total Projects</h5>
+                    <p class="card-text display-6">12</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Example Card 2: Open Issues -->
+        <div class="col-md-4">
+            <div class="card text-white bg-danger mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Open Issues</h5>
+                    <p class="card-text display-6">34</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Example Card 3: Completed Tasks -->
+        <div class="col-md-4">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Completed Tasks</h5>
+                    <p class="card-text display-6">78</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional table for recent issues -->
+    <div class="mt-5">
+        <h3>Recent Issues</h3>
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Issue Title</th>
+                    <th>Project</th>
+                    <th>Status</th>
+                    <th>Priority</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Login not working</td>
+                    <td>IssueBoard App</td>
+                    <td><span class="badge bg-warning">In Progress</span></td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Dashboard layout issue</td>
+                    <td>IssueBoard App</td>
+                    <td><span class="badge bg-danger">Open</span></td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Email notifications bug</td>
+                    <td>Notification System</td>
+                    <td><span class="badge bg-success">Closed</span></td>
+                    <td>Low</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
